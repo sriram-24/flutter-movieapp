@@ -15,11 +15,11 @@ To run this project on  local machine, download or clone the project to your com
 
 install the Flutter SDK for your system.
 
-[]: https://flutter.dev/docs/get-started/install
+ https://flutter.dev/docs/get-started/install
 
 install visual studio code.
 
-[]: https://code.visualstudio.com/Download
+ https://code.visualstudio.com/Download
 
 Using the **terminal** in the visual studio code , go to the path where movie project is located in your system.
 
