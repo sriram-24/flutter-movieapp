@@ -20,6 +20,8 @@ dependencies:
   smooth_star_rating: ^1.0.4+2
   http: ^0.12.0+3
   flutter_rating_bar: ^3.0.0+1
+  flutter_launcher_icons: ^0.7.4
+  
 
   tmdb_dart: ^0.0.8
   flutter:
@@ -43,6 +45,11 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
+flutter_icons:
+  android: "launcher_icon"
+  
+  ios: true
+  image_path: "assets/appicon.png"
 flutter:
 
   # The following line ensures that the Material Icons font is
@@ -82,3 +89,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+ 

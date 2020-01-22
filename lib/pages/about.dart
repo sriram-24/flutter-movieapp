@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class aboutpage extends StatefulWidget {
   @override
   _aboutpageState createState() => _aboutpageState();
@@ -20,8 +21,27 @@ class _aboutpageState extends State<aboutpage> {
         
       ),
       body:  Container(
-       
-      ),
+        child: Row(
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: RaisedButton(
+                child: Text("read"),
+                onPressed: (){},
+                
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: RaisedButton(
+                child: Text("write"),
+                onPressed: (){},
+              ),
+            )
+          ],
+        ),
+        ),
+      
       
     );
   }

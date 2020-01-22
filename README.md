@@ -1,16 +1,45 @@
-# movieapp
+#### **Movie App**
 
-A new Flutter project.
+The movie app that is used to search movies, get information about the movies and the other details. This application consist of the recommendation page which lets the user to  choose a movie of their own interests.
 
-## Getting Started
+#### Getting Started
 
-This project is a starting point for a Flutter application.
+To run this project on  local machine, download or clone the project to your computer then you can develop and test this project in the system.
 
-A few resources to get you started if this is your first Flutter project:
+#### Prerequisites
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Flutter SDK version  ">=2.1.0 < 3.0.0".
+- Visual studio code or Android Studio.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Installing
+
+install the Flutter SDK for your system.
+
+[]: https://flutter.dev/docs/get-started/install
+
+install visual studio code.
+
+[]: https://code.visualstudio.com/Download
+
+Using the **terminal** in the visual studio code , go to the path where movie project is located in your system.
+
+To run the project type
+
+```dart
+flutter run
+```
+
+This command will run the project in the system.
+
+#### Built with
+
+- Dart - programming language.
+- The MovieDB API - used to get the movie informations and links.
+
+#### Authors
+
+- **Sriram**  
+- **Thilagan**
+
+#### Aknowledgments
+

@@ -41,6 +41,7 @@ class _searchpageState extends State<searchpage> {
   for (var movie in pageresult.results){
     details detail=details(
     movie.id,
+    
     movie.posterPath,
     
     movie.title,
@@ -67,16 +68,9 @@ class _searchpageState extends State<searchpage> {
   }
   bool searchbar=false;
   int id;
-  String overView;
-  String title;
   String posterurl;
-  String originaltitle;
-  String originallanguage;
-  DateTime releasedate;
-  String backdroppath;
-  List<int> genreid;
-  bool video;
-  int popularity;
+  String title;
+  String overView;
   var popular;
   @override
   Widget build(BuildContext context) {
@@ -154,9 +148,9 @@ class _searchpageState extends State<searchpage> {
                     onTap: (){
                       id=snapshot.data[index].id;
                       overView=snapshot.data[index].overview;
-
+                      posterurl=snapshot.data[index].posterurl;
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => searchmoviedetails(value:id,overview:overView)
+                        builder: (context) => searchmoviedetails(value:id,overview:overView,posterurl: posterurl,)
                       ));
 
                      
