@@ -38,8 +38,8 @@ This command will run the project in the system.
 
 #### Authors
 
-- **Sriram**  
-- **Thilagan**
+- **Sriram**  -  https://github.com/sriram-24
+- **Thilagan** - https://github.com/Thilagan148
 
 #### Aknowledgments
 
