@@ -11,7 +11,6 @@ class details{
   String originaltitle;
   String originallanguage;
   DateTime releasedate;
-  String backdroppath;
   List<int> genreid;
   bool video;
   int popularity;
@@ -21,7 +20,11 @@ class details{
     
     this.overview,
     
-    this.popular
+    this.popular,
+    this.originaltitle,
+    this.originallanguage,
+    this.releasedate,
+    this.video
 
   ); 
 }
@@ -49,11 +52,17 @@ class _searchpageState extends State<searchpage> {
     
     
     
-    movie.voteAverage.toDouble());
+    movie.voteAverage.toDouble(),
+    movie.originalTitle,
+    movie.originalLanguage,
+    movie.releaseDate,
+    movie.video
+    );
 
     det.add(detail);
   }
   print(det.length);
+  print(video);
   return det;
 
   }
@@ -72,6 +81,10 @@ class _searchpageState extends State<searchpage> {
   String title;
   String overView;
   var popular;
+  String originaltitle;
+  String originallanguage;
+  DateTime releasedate;
+  bool video;
   @override
   Widget build(BuildContext context) {
     return  new Scaffold(
@@ -149,8 +162,13 @@ class _searchpageState extends State<searchpage> {
                       id=snapshot.data[index].id;
                       overView=snapshot.data[index].overview;
                       posterurl=snapshot.data[index].posterurl;
+                      popular=snapshot.data[index].popular;
+                      title=snapshot.data[index].title;
+                      originaltitle=snapshot.data[index].originaltitle;
+                      originallanguage=snapshot.data[index].originallanguage;
+                      releasedate=snapshot.data[index].releasedate;
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => searchmoviedetails(value:id,overview:overView,posterurl: posterurl,)
+                        builder: (context) => searchmoviedetails(value:id,overview:overView,posterurl: posterurl,popular: popular,title: title,originaltitle: originaltitle,originallanguage: originallanguage,releasedate: releasedate)
                       ));
 
                      
@@ -159,7 +177,7 @@ class _searchpageState extends State<searchpage> {
               }
             );
             }
-          }
+          } 
         )
       )
     );

@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(),
       title: "movieapp",
       home: homePage(),        
-    
+      
      
       
       
@@ -81,6 +81,7 @@ class _afterintroState extends State<afterintro> {
     
   }
 
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(

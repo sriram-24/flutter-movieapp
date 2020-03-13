@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class aboutpage extends StatefulWidget {
   @override
   _aboutpageState createState() => _aboutpageState();
@@ -19,28 +20,35 @@ class _aboutpageState extends State<aboutpage> {
         title:  new Text("About"),
         centerTitle: true,
         
+        
       ),
-      body:  Container(
+      body:  Center(
         child: Row(
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: RaisedButton(
-                child: Text("read"),
-                onPressed: (){},
-                
+            Container(
+              child: RaisedButton(onPressed: (){
+                showAboutDialog(
+                  context: context,
+                  applicationIcon: Image.asset("appicon.png"),
+                  applicationName: "MovieInfiity",
+                  applicationVersion: "1.0.0",
+                  applicationLegalese: "Developed by ArchLinux Team"
+
+                  );
+              },
+                child:Text("About app")
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: RaisedButton(
-                child: Text("write"),
-                onPressed: (){},
-              ),
+            RaisedButton(
+              onPressed: () async {
+                const url="https://www.github.com/sriram-24";
+                
+              },
+              child: Text("View Source code"),
             )
           ],
         ),
-        ),
+      ),
       
       
     );
